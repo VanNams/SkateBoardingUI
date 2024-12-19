@@ -10,32 +10,30 @@
 
 </head>
 <body class="bg-primary">
-    <div class="container m-auto">
-        <header class="flex justify-between items-center my-10">
-            <a href="" class="text-5xl font-bold">Dexpress</a>
-            <nav>
-                <ul class="flex items-center">
-                    <li><a href="" class="text-xl font-bold px-4 py-2 mx-4">About us</a></li>
-                    <li><a href="" class="text-xl font-bold px-4 py-2 mx-4">Decks</a></li>
-                    <li><a href="" class="text-xl font-bold px-4 py-2 mx-4">Wheels</a></li>
-                    <li><a href="" class="text-xl font-bold px-4 py-2 mx-4">Contact</a></li>
-                    <li><a href="" class="px4 py-2">
-                        <img src="./picture/avatar.png" alt="avatar" class="blox object-cover max-w-16">
-                      </a></li>
+    <div class="container m-auto md:h-full">
+        <header class="flex p-4 md:p-0 md:justify-between md:items-center md:my-10">
+            <a href="" class="hidden md:block md:text-5xl font-bold">Dexpress</a>
+            <nav class="flex justify-between w-full">
+                <button class="md:hidden p-2 md:p-0">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                    </svg> 
+                </button>                 
+                <ul class="md:flex md:items-center">
+                    <li><a href="" class="hidden md:block md:text-xl font-bold md:px-4 md:py-2 md:mx-4">About us</a></li>
+                    <li><a href="" class="hidden md:block md:text-xl font-bold md:px-4 md:py-2 md:mx-4">Decks</a></li>
+                    <li><a href="" class="hidden md:block md:text-xl font-bold md:px-4 md:py-2 md:mx-4">Wheels</a></li>
+                    <li><a href="" class="hidden md:block md:text-xl font-bold md:px-4 md:py-2 md:mx-4">Contact</a></li>
                 </ul>
+                <a href="" class="px4 py-2">
+                    <img src="./picture/avatar.png" alt="avatar" class="blox object-cover max-w-16">
+                </a>
             </nav>
         </header>
-        <main class="mb-10">
-            <div class="relative h-full">
-                <div class="left-content absolute left-0 top-1/2 -translate-y-1/2">
-                    <h1 class="text-6xl w-4/6 font-bold">skateboarding done right</h1>
-                    <p class="text-xl mx-4 text-gray-500 py-20 w-2/5 leading-8">Wooden longboard in Best quality for skateboard loves</p>
-                    <p class="flex items-center py-2 ps-4 w-2/6 h-16 text-3xl ms-10 font-bold relative before:block before:w-20 before:h-20 before:rounded-full before:absolute before:-inset-1 before:bg-secondary">
-                        <a class="relative">Order Now</a>
-                    </p>    
-                </div>
-                <img src="./picture/picture.png" class="block object-cover w-1/2 m-auto" alt="">
-                <div class="right-content absolute right-0 top-1/2 -translate-y-1/2">
+        <main class="md:mb-10 h-full">
+            <div class="h-full md:relative md:h-full">
+                <img src="./picture/picture.png" class="block object-cover w-full md:w-1/2 md:m-auto md:mb-0 " alt="">
+                <div class="hidden md:flex md:right-content md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2">
                     <ul class="grid grid-rows-3 grid-flow-col gap-20">
                         <li class="flex justify-between items-center">
                             <svg class="w-20 h-16 text-gray-50 rounded-2xl bg-secondary p-2 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -66,9 +64,16 @@
                         </li>
                     </ul>
                 </div>
+                <div class="left-content text-center md:text-left md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
+                    <h1 class="text-3xl mx-4 md:text-6xl md:w-4/6 font-bold">skateboarding <br> done right</h1>
+                    <p class="text-xl md:text-xl mx-8 md:mx-4 text-gray-500 py-2 md:py-20 md:w-2/5 md:leading-8">Wooden longboard in Best quality for skateboard loves</p>
+                    <p class=" md:flex items-center py-8 md:py-2 md:ps-4 md:w-2/6 md:h-16 text-base md:text-3xl md:ms-10 font-bold relative before:block before:w-12 md:before:w-20 before:h-12 md:before:h-20 before:rounded-full before:absolute before:inset-x-1/3 md:before:-inset-1 before:inset-y-1/4 before:bg-secondary">
+                        <a class="relative py-4">Order Now</a>
+                    </p>    
+                </div>
             </div>
         </main>
-        <footer class="flex justify-between items-center">
+        <footer class="hidden md:flex md:justify-between md:items-center">
             <div class="brands">
                 <h3 class="text-3xl font-bold">Brands Available</h3>
                 <h4 class="text-base font-bold text-gray-500">Famous brands</h4>
